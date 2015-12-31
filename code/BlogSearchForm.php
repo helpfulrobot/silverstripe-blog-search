@@ -10,7 +10,6 @@ class BlogSearchForm extends Form
 
     public function __construct($controller, $name = "BlogSearchForm")
     {
-
         parent::__construct(
             $controller,
             $name,
@@ -20,7 +19,6 @@ class BlogSearchForm extends Form
         );
 
         $this->addExtraClass("blog-form");
-
     }
 
     /**
@@ -37,7 +35,6 @@ class BlogSearchForm extends Form
 
     public function search(array $data, BlogSearchForm $form, SS_HTTPRequest $request)
     {
-
         $link = $this->getBlog()->Link();
 
         //if we have keyword and category
@@ -50,8 +47,6 @@ class BlogSearchForm extends Form
         }
 
         return Controller::curr()->redirect($link);
-
-
     }
 
     /**
@@ -59,7 +54,6 @@ class BlogSearchForm extends Form
      */
     protected function getFormFields()
     {
-
         $request = Controller::curr()->getRequest();
         $fields = new FieldList();
 
@@ -120,5 +114,4 @@ class BlogSearchForm extends Form
 
         return $validator;
     }
-
 }

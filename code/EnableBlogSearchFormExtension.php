@@ -17,5 +17,4 @@ class EnableBlogSearchFormExtension extends SiteTreeExtension
     {
         return BlogSearchForm::create($this->owner);
     }
-
 }

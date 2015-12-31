@@ -30,7 +30,5 @@ class BlogSearchBlogExtension extends SiteTreeExtension
 
 
         return $blogPosts;
-
     }
-
 }
